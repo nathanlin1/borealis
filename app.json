@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "scheme": "com.borealis",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.borealis"
+    },
+    "android": {
+      "package": "com.borealis"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "Borealis",
+    "slug": "borealis",
+    "extra": {
+      "eas": {
+        "projectId": "745577bc-54be-47fb-8c60-f13fc93d70f9"
+      }
+    },
+    "owner": "nathanlin415"
+  }
+}
