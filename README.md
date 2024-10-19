@@ -1,6 +1,7 @@
 TO START:
 
 add .env with client ids
+
 run npm install
 
 TO RUN:
