@@ -6,4 +6,4 @@ run npm install
 
 TO RUN:
 
-npx expo start --tunnel
+npx expo start --dev-client
