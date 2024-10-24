@@ -1,25 +1,31 @@
 {
   "expo": {
-    "scheme": "com.borealis",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "Borealis",
+    "slug": "borealis",
+    "version": "1.0.0",
+    "scheme": "borealis",
     "ios": {
-      "bundleIdentifier": "com.borealis"
+      "bundleIdentifier": "com.borealis.borealis",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "742254235621-j9u360l1pb349mj69353ca0qad01pvtq.apps.googleusercontent.com"
+            ]
+          }
+        ]
+      }
     },
     "android": {
-      "package": "com.borealis"
+      "package": "com.borealis.borealis"
     },
     "web": {
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "@react-native-google-signin/google-signin"
     ],
-    "name": "Borealis",
-    "slug": "borealis",
     "extra": {
       "eas": {
         "projectId": "745577bc-54be-47fb-8c60-f13fc93d70f9"
