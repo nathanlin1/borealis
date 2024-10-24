@@ -5,8 +5,12 @@ import {
 } from '@react-native-google-signin/google-signin'
 import { supabase } from '../lib/supabase'
 import { router } from 'expo-router'
+import { useGlobalContext } from '../context/GlobalProvider';
 
 const Auth = () =>  {
+  const {setUser, setIsLogged} = useGlobalContext();
+
+  
   GoogleSignin.configure({
     scopes: [
       "https://www.googleapis.com/auth/userinfo.email",
@@ -29,6 +33,7 @@ const Auth = () =>  {
               token: userInfo.data!.idToken,
             })
             console.log(error, data)
+            setIsLogged(true);
             router.replace('/home')
           } else {
             throw new Error('no ID token present!')
