@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 
 const RoutesLayout = () => {
     return (
-        <Stack/>
+        <Stack screenOptions={{ headerShown: false}}></Stack>
     )
 }
 
