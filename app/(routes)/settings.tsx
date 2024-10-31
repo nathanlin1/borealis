@@ -1,6 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { Link } from "expo-router";
 import { View, Text, Image, TouchableOpacity } from "react-native";
+import images from "../../constants/images"
 
 const Settings = () => {
     return (
@@ -29,7 +30,7 @@ const Settings = () => {
             <View style={{ position: 'absolute', bottom: 50 }}>
                 <Link href="/home">
                     <Image
-                        source={require('../components/Settings_Button.png')}
+                        source={images.settings}
                         style={{ width: 50, height: 50 }}
                     />
                 </Link>

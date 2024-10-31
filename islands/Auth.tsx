@@ -8,7 +8,7 @@ import { router } from 'expo-router'
 import { useGlobalContext } from '../context/GlobalProvider';
 
 const Auth = () =>  {
-  const {setUser, setIsLogged} = useGlobalContext();
+  const {setUser, setIsLoggedIn} = useGlobalContext();
 
   
   GoogleSignin.configure({
@@ -33,7 +33,7 @@ const Auth = () =>  {
               token: userInfo.data!.idToken,
             })
             console.log(error, data)
-            setIsLogged(true);
+            setIsLoggedIn(true);
             router.replace('/home')
           } else {
             throw new Error('no ID token present!')
