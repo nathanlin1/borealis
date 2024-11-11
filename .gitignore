@@ -1,5 +1,6 @@
 app.json
 app.config.json
+.env
 
 # macOS
 .DS_Store
