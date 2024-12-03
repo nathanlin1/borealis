@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React, { useState } from 'react';
 // @ts-ignore
 import images  from "../../constants/images"
+import RecordAnalyzeButton from "../../islands/RecordAnalyze";
 
 const Home = () => {
 
@@ -20,30 +21,11 @@ const Home = () => {
         end={{ x: 1, y: 1 }}
         >
         {/* Audio Visualizer being implemented*/}
-        <Text>
+        {/* <Text>
             Audio Visualizer
-        </Text>
-        {/* Decibels View being implementation*/}
-        <Text>
-            0 Decibels
-        </Text>
+        </Text> */}
         {/* Play/Pause Button */}
-        <View style={{ flex: 1, justifyContent: 'flex-end', alignItems: 'center' , position: 'absolute', bottom: 180}}>
-            <TouchableOpacity onPress={togglePlayPause}>
-            <Image
-            source={
-                isPlaying 
-                ? images.play
-                : images.pause
-            }
-            style={{
-                width: 225, 
-                height: 225,
-            }}
-            /> 
-            </TouchableOpacity>             
-            
-        </View>
+        <RecordAnalyzeButton/>
         {/* Settings Button */}
         <View style={{ position: 'absolute', bottom: 50 }}>
             <Link href="/settings">
