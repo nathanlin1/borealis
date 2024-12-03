@@ -3,7 +3,7 @@ import { View, Image, Text, TouchableOpacity } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import React, { useState } from 'react';
 import images  from "../../constants/images"
-import RecordAnalyzeButton from '../../islands/RecordAnalyze';
+import RecordAnalyzeButton from "../../islands/RecordAnalyze";
 
 const Home = () => {
 

@@ -1,11 +1,9 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { getUser } from "../db/get_user";
 
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
 const GlobalProvider = ({ children }) => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -31,8 +29,6 @@ const GlobalProvider = ({ children }) => {
     return (
         <GlobalContext.Provider
             value={{
-                isLoggedIn,
-                setIsLoggedIn,
                 user,
                 setUser,
                 isLoading,

@@ -1,12 +1,7 @@
 import React from 'react';
-import { SafeAreaView, View, Text } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import Auth from '../islands/Auth';
-import { useGlobalContext } from '../context/GlobalProvider';
 import { Redirect } from 'expo-router';
 
 const Index = () => {
-  const {isLoading, isLoggedIn} = useGlobalContext();
 
   return <Redirect href="/home"/>
 
