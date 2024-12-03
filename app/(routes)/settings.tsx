@@ -1,6 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { Link } from "expo-router";
 import { View, Text, Image, TouchableOpacity } from "react-native";
+// @ts-ignore
 import images from "../../constants/images"
 
 const Settings = () => {

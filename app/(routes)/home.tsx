@@ -2,6 +2,7 @@ import { Link } from "expo-router";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import React, { useState } from 'react';
+// @ts-ignore
 import images  from "../../constants/images"
 
 const Home = () => {
